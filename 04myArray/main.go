@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 )
 
 func main()  {
@@ -37,4 +38,7 @@ func main()  {
 
 	highScore = append(highScore, 435, 434)
 	fmt.Println(highScore)
+	sort.Ints(highScore)
+	fmt.Println(highScore)
+
 }
